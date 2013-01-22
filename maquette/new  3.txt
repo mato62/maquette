@@ -1,0 +1,28 @@
+<?php
+if (isset($_POST['upload'])){
+	$erreur = $_FILES['image']['error'];
+	$size = $_FILES['image']['size'];
+	$type = $_FILES['image'] ['type'];
+	
+	if($erreur !=0){
+	
+	 {
+	  echo "<div class='alert alert-error'>";
+	  echo "Veuillez  upload";
+	  }
+	  if($size >1000*1024)
+	  {
+	    echo "<div class='alert alert-error'>"
+		echo "Erreur taille superieur à 2mo";
+		echo "<div>
+	  }
+	  if($type != "image/jpeg)
+	  {
+	    echo "<div class='alert alert-error'>"
+		echo "Mettez une image jpeg";
+		echo "<div>
+		
+	  
+	  }
+	}
+	?>
